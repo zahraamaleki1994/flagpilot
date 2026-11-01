@@ -1,0 +1,27 @@
+{
+  "name": "flagpilot",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Feature-flag platform: toggle and roll out features without redeploying.",
+  "author": "Zahra Maleki",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.16.1",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.16.1",
+  "devDependencies": {
+    "turbo": "^2.11.10"
+  }
+}
