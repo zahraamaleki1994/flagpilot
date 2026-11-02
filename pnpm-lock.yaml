@@ -166,6 +166,9 @@ importers:
 
   .:
     devDependencies:
+      prettier:
+        specifier: ^3.9.10
+        version: 3.9.10
       turbo:
         specifier: ^2.11.10
         version: 2.11.10
@@ -218,9 +221,6 @@ importers:
       oxlint-tsgolint:
         specifier: ^7.0.2001
         version: 7.0.2005
-      prettier:
-        specifier: ^3.4.2
-        version: 3.9.10
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
