@@ -1,8 +1,8 @@
 packages:
-  - "apps/*"
-  - "packages/*"
+  - 'apps/*'
+  - 'packages/*'
 
 allowBuilds:
-  "@parcel/watcher": false
+  '@parcel/watcher': false
   sharp: false
   unrs-resolver: false
