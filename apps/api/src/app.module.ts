@@ -4,6 +4,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { RedisModule } from './redis/redis.module';
+import { HealthController } from './health/health.controller';
 
 @Module({
   imports: [
@@ -16,7 +17,7 @@ import { RedisModule } from './redis/redis.module';
     }),
     RedisModule,
   ],
-  controllers: [AppController],
+  controllers: [AppController, HealthController],
   providers: [AppService],
 })
 export class AppModule {}
