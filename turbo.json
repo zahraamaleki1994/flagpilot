@@ -9,9 +9,12 @@
       "cache": false,
       "persistent": true
     },
+    "typegen": {
+      "outputs": [".next/types/**", "next-env.d.ts"]
+    },
     "lint": {},
     "typecheck": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["^build", "typegen"]
     },
     "test": {
       "dependsOn": ["^build"]
