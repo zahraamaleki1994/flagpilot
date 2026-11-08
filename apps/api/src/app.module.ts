@@ -17,7 +17,7 @@ import { AuthModule } from './auth/auth.module';
       }),
     }),
     RedisModule,
-    AuthModule
+    AuthModule,
   ],
   controllers: [AppController, HealthController],
   providers: [AppService],
