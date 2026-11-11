@@ -6,6 +6,7 @@ import { AppService } from './app.service';
 import { RedisModule } from './redis/redis.module';
 import { HealthController } from './health/health.controller';
 import { AuthModule } from './auth/auth.module';
+import { FlagsModule } from './flags/flags.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { AuthModule } from './auth/auth.module';
     }),
     RedisModule,
     AuthModule,
+    FlagsModule,
   ],
   controllers: [AppController, HealthController],
   providers: [AppService],
