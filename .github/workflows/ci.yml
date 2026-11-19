@@ -27,8 +27,7 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      - run: pnpm --filter @flagpilot/sdk-js build
-      - run: pnpm build
+      - run: pnpm build -- --force
       - run: pnpm format:check
       - run: pnpm lint
       - run: pnpm typecheck
