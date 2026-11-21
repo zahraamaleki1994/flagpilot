@@ -1,0 +1,14 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Health {
+  mongo: String!
+  redis: String!
+  status: String!
+}
+
+type Query {
+  """Returns the API status"""
+  health: Health!
+}
