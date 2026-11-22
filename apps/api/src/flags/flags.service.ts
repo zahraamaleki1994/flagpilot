@@ -22,7 +22,11 @@ export class FlagsService {
     await this.redis.set('flags:all', JSON.stringify(flags));
   }
 
-  async create(key: string, description: string, createdBy: string) {
+  async create(
+    key: string,
+    description: string | undefined,
+    createdBy: string,
+  ) {
     const existing = await this.flagModel.findOne({ key });
     if (existing) throw new ConflictException(`Flag "${key}" already exists`);
     const flag = await this.flagModel.create({ key, description, createdBy });

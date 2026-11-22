@@ -12,8 +12,7 @@ The full roadmap with explanations lives in a separate document. This file is th
 
 ## Phase 1 · Authentication and teams
 
-- [ ] NestJS API with GraphQL (code-first), Mongoose, config and validation
-  - Partly done: Mongoose and config exist. The API is REST, and input is not validated.
+- [x] NestJS API with GraphQL (code-first), Mongoose, config and validation
 - [ ] Sign up, log in, log out; JWT access token + rotating refresh token in httpOnly cookies
   - Partly done: sign up and log in with a JWT access token. No refresh token, no cookies, no log out.
 - [ ] Organizations, invitations by email link, roles with guards (`@Roles('admin')`)
